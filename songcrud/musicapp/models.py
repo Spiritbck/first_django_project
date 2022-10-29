@@ -18,7 +18,7 @@ class Song(models.Model):
 
     # Declearing database fields
     title = models.CharField(max_length=30)
-   # artist_id = models.AutoField(primary_key=True)
+    artist_id = models.AutoField(primary_key=True)
     likes = models.IntegerField(default=0)
     date_released = models.DateTimeField('date released')
 
